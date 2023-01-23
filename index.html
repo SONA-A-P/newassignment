@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+    /*scroll effect*/
+.navbar-trans {
+    background-color: transparent;
+    border: none;
+    transition: top 1s ease;
+  }
+   
+  /*double row*/
+  .navbar-doublerow > .navbar{
+      display: block;	
+      padding: 0px auto;
+      margin: 0px auto;
+      min-height: 25px;
+  }
+  .navbar-doublerow .nav{
+      padding: 0px auto;
+  }
+  .navbar-doublerow .dividline{
+    margin: 5px 100px;
+    padding-top: 1px;
+    background-color: inherit;
+  }
+  /*top nav*/
+  .navbar-doublerow .navbar-top ul>li>a {
+      padding: 10px auto;
+      font-size: 12px;
+  } 
+  /*down nav*/
+  .navbar-doublerow .navbar-down .navbar-brand {
+      padding: 0px auto;
+      float: left;
+      color: #fff;
+      font-size: 32px;
+  }
+  .navbar-doublerow .navbar-down ul>li>a{
+      font-size: 16px;
+      color: #fff;
+      transition: border-bottom .2s ease-in , transform .2s ease-in-out;
+  }
+  .navbar-doublerow .navbar-down ul>li>a:hover{
+      border-bottom: 1px solid #fff;
+      color: #fff;
+  }
+  .navbar-doublerow .navbar-down .dropdown{
+      padding: 5px;
+      color: #000;
+  }
+  .navbar-doublerow .navbar-down .dropdown ul>li>a,
+  .navbar-doublerow .navbar-down .dropdown ul>li>a:hover{
+    color: #000;
+    border-bottom: none;
+  }
+  .navbar-doublerow.navbar-trans.afterscroll {
+    top:-50px;
+  }	
+  .navbar-doublerow.navbar-trans.afterscroll {
+     top:-50px;
+  }	
+  
+  .flex-container {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+ 
+  .text-white.text-white-hover:hover{color:#fff!important}
+  
+  .light-grey {color:#000!important;background-color:#E6E9ED!important}
+  
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top">
+        <!-- top nav -->
+        <nav class="navbar navbar-top hidden-xs">
+          <div class="container">
+            <!-- left nav top -->
+            <ul class="nav navbar-nav pull-left">
+              <li><a href="loginpage.html"><span class="glyphicon glyphicon-thumbs-up text-white">login </span></a></li>
+              <li><a href="index.html"><span class="glyphicon glyphicon-globe text-white">Home</span></a></li>
+              <li><a href="signup.html"><span class="glyphicon glyphicon-pushpin text-white">Signup</span></a></li>
+              <li><a href="./homepage.html" class="text-white">More about page</a></li>
+              
+            </ul>
+            <!-- right nav top -->
+            <ul class="nav navbar-nav pull-right">
+           
+              <li><a href="kerala.html" class="text-white">District page</a></li> 
+            </ul>
+          </div>
+          <div class="dividline light-grey"></div>
+        </nav>
+        <!-- down nav -->
+        <nav class="navbar navbar-down">
+          <div class="container">
+            <div class="flex-container">  
+              <div class="navbar-header flex-item">
+                <div class="navbar-brand" href="#">Welcome</div>
+              </div>
+               <ul class="nav navbar-nav flex-item hidden-xs"> 
+                 <li><a href="https://www.keralatourism.org">EXIT</a></li> 
+                 <li><a href="https://www.tripadvisor.in">For booking</a></li>  
+                 <li><a href="https://www.kayak.co.in/trips/kerala">Trips</a></li>  
+               </ul> 
+           
+              </div>  
+            </div>
+          </nav>
+        </nav> 
+      <!--bg img  -->
+      <header>
+          <img src="11.jpg" style="width:100%">
+      
+</body>
+</html>
